@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import './Header.css';
 import {BiMenuAltRight} from 'react-icons/bi'
 import OutsideClickHandler from 'react-outside-click-handler';
+
+// for menu icon functioning in responsive
+
 const Header = () => {
   const [menuOpened, setMenuOpened]=useState(false)
 
