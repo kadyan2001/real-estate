@@ -3,6 +3,7 @@ import './GetStarted.css'
 
 const GetStarted = () => {
   return (
+    <div id="getstarted">
     <section className="g-wrapper">
         <div className="paddings innerwidth g-container">
             <div className="flexColCenter inner-container">
@@ -17,6 +18,7 @@ const GetStarted = () => {
             </div>
         </div>
     </section>
+    </div>
   )
 }
 

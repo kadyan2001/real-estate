@@ -5,8 +5,10 @@ import './Residencies.css'
 import data from '../../utils/slider.json'
 import { sliderSettings } from '../../utils/common'
 
+
 const Residencies = () => {
   return (
+    <div id="residencies">
     <section className="r-wrapper">
         <div className="paddings innerWidth r-container">
             <div className="r-head flexColStart">
@@ -36,6 +38,7 @@ const Residencies = () => {
             </Swiper>
         </div>
     </section>
+    </div>
     
     )
 }
