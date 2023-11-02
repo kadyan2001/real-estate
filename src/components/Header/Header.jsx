@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Header.css';
 import {BiMenuAltRight} from 'react-icons/bi'
 import OutsideClickHandler from 'react-outside-click-handler';
+import { Link } from 'react-router-dom';
 
 // for menu icon functioning in responsive
 
@@ -16,7 +17,7 @@ const Header = () => {
   }
   return (
    <section className="h-wrapper">
-    <div className="flexCenter paddings innerWidth h-container">
+    <Link to={"/"} className="flexCenter paddings innerWidth h-container">
         <img src="./logo.png" alt="logo" width={100} />
 
         <OutsideClickHandler
@@ -28,10 +29,11 @@ const Header = () => {
         >
             <a href="#residencies">Residencies</a>
             <a href="#value">Our Value</a>
-            <a href="#contact">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
             <a href="#getstarted">Get Started</a>
             <button className="button">
-            <a href="mailto:mankashkadian@gmail.com">Contact</a>
+            {/* <a href="mailto:mankashkadian@gmail.com">Contact</a> */}
+            <Link className='button' to={'/login'}>Login</Link>
             </button>
         </div>
       </OutsideClickHandler>
@@ -39,7 +41,7 @@ const Header = () => {
         <div className="menu-icon" onClick={()=>setMenuOpened((prev)=>!prev)}>
       <BiMenuAltRight size={30}/>
     </div>
-    </div>
+    </Link>
    </section>
   )
 }

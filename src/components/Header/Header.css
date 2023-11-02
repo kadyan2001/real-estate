@@ -22,7 +22,9 @@
 .menu-icon{
   display: none;
 }
-
+.button{
+  padding: 10px;
+}
 @media (max-width: 768px) {
   .menu-icon{
     display: block;

@@ -3,8 +3,12 @@ import './Contact.css'
 import {MdCall} from 'react-icons/md'
 import {BsFillChatDotsFill} from 'react-icons/bs'
 import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 const Contact = () => {
   return (
+    <>
+    <Header/>
     <div id="contact">
    <section className="c-wrapper">
     <div className="paddings innerWidth flexCenter c-container">
@@ -89,6 +93,8 @@ const Contact = () => {
     </div>
    </section>
    </div>
+   <Footer/>
+    </>
   )
 }
 
